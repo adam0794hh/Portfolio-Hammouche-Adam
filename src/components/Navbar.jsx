@@ -3,6 +3,7 @@ import "../components/navbar.css"
 
 function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false);
+    const [activeItem, setActiveItem] = useState('Accueil')
 
     const handleScroll = () => {
         const scrolly = window.scrollY;
@@ -21,6 +22,10 @@ function Navbar() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const handleClick = (item) => {
+        setActiveItem(item);
+    }
     
   return (
     <div className={`navbar-default ${showNavbar ? 'show' : ''}`}>
@@ -31,22 +36,35 @@ function Navbar() {
                     <nav>
                         <ul className='nav-menu'>
                             <li>
-                                <a href='#Home' className='menu-items'>Accueil</a>
+                                <a href='#Home' 
+                                className=
+                                {`menu-items ${activeItem === 'Accueil' ? 'active' : ''}`} 
+                                onClick={() => handleClick('Accueil')}>Accueil</a>
                             </li>
                             <li>
-                                <a href='#Works' className='menu-items'>Mon Travail</a>
+                                <a href='#Works' 
+                                className={`menu-items ${activeItem === 'Mon Travail' ? 'active' : ''}`} 
+                                onClick={() => handleClick('Mon Travail')}>Mon Travail</a>
                             </li>
                             <li>
-                                <a className='menu-items'>Portfolio</a>
+                                <a 
+                                className={`menu-items ${activeItem === 'Portfolio' ? 'active' : ''}`} 
+                                onClick={() => handleClick('Portfolio')}>Portfolio</a>
                             </li>
                             <li>
-                                <a className='menu-items'>Profil</a>
+                                <a 
+                                className={`menu-items ${activeItem === 'Profil' ? 'active' : ''}`} 
+                                onClick={() => handleClick('Profil')}>Profil</a>
                             </li>
                             <li>
-                                <a className='menu-items'>A propos</a>
+                                <a 
+                                className={`menu-items ${activeItem === 'A propos' ? 'active' : ''}`} 
+                                onClick={() => handleClick('A propos')}>A propos</a>
                             </li>
                             <li>
-                                <a className='menu-items'>Contact</a>
+                                <a 
+                                className={`menu-items ${activeItem === 'Contact' ? 'active' : ''}`} 
+                                onClick={() => handleClick('Contact')}>Contact</a>
                             </li>
                         </ul>
                     </nav>
