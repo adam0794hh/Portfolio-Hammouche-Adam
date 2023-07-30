@@ -47,7 +47,7 @@ function Navbar() {
                                 onClick={() => handleClick('Mon Travail')}>Mon Travail</a>
                             </li>
                             <li>
-                                <a 
+                                <a href='#Portfolio' 
                                 className={`menu-items ${activeItem === 'Portfolio' ? 'active' : ''}`} 
                                 onClick={() => handleClick('Portfolio')}>Portfolio</a>
                             </li>
