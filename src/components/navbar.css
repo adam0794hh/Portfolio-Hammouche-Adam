@@ -28,6 +28,7 @@
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    height: 82px;
 }
 .row {
     display: flex;
@@ -40,6 +41,7 @@
     list-style: none;
     gap: 30px;
     text-transform: uppercase;
+    list-style: none;
 }
 .menu-items {
     color: #202020;
@@ -56,4 +58,62 @@
 }
 .menu-items.active {
     color: #eb5424;
+}
+.nav-flex {
+    display: flex;
+}
+/* Styles for mobile */
+.mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    opacity: 0;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #eb5424;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .navbar-default {
+        max-height: 51px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column; 
+        background-color: #fff;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+        padding: 20px;
+    }
+
+    .menu-items {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .mobile-header {
+        opacity: 1;
+    }
+    .nav-menu.show {
+        display: flex;  
+        margin: 0;
+        padding-right: 15px;
+        padding-left: 15px;
+        overflow-x: visible;
+        -webkit-overflow-scrolling: touch;
+        border-top: 1px solid #f44336;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
 }

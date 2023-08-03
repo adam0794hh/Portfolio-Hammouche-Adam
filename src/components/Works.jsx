@@ -10,7 +10,7 @@ function Works() {
             <div className='works-title'>
               <h2 className='title'> En quoi consiste MON TRAVAIL ?</h2>
             </div>
-            <div className='row'>
+            <div className='works-row'>
               <WorkWrap
                 title={"Développement de Sites Vitrines"}
                 description={"Je crée des sites vitrines élégants avec des designs modernes et des fonctionnalités intuitives pour attirer et convertir vos visiteurs en clients."}

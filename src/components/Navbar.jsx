@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import "../components/navbar.css"
 
 function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
     const [activeItem, setActiveItem] = useState('Accueil')
 
     const handleScroll = () => {
         const scrolly = window.scrollY;
-        if (scrolly > 200) {
-            setShowNavbar(true);
-        } else {
-            setShowNavbar(false);
-        }
+        setShowNavbar(scrolly > 200);
     };
 
     useEffect(() => {
@@ -25,7 +24,11 @@ function Navbar() {
 
     const handleClick = (item) => {
         setActiveItem(item);
+        setShowMenu(false);
     }
+    const toggleNavbar = () => {
+        setShowMenu((prevShowMenu) => !prevShowMenu);
+    };
     
   return (
     <div className={`navbar-default ${showNavbar ? 'show' : ''}`}>
@@ -33,8 +36,13 @@ function Navbar() {
             <div className='row'>
                 <div>LOGO</div>
                 <div>
-                    <nav>
-                        <ul className='nav-menu'>
+                    <nav className='nav-flex'>
+                        <div className="mobile-header">
+                            <button className="menu-icon" onClick={toggleNavbar}>
+                                <FontAwesomeIcon icon={faBars} />
+                            </button>
+                        </div>
+                        <ul className={`nav-menu ${showMenu ? 'show' : ''}`}>
                             <li>
                                 <a href='#Home' 
                                 className=
@@ -52,21 +60,22 @@ function Navbar() {
                                 onClick={() => handleClick('Portfolio')}>Portfolio</a>
                             </li>
                             <li>
-                                <a 
+                                <a href='#Profil'
                                 className={`menu-items ${activeItem === 'Profil' ? 'active' : ''}`} 
                                 onClick={() => handleClick('Profil')}>Profil</a>
                             </li>
                             <li>
-                                <a 
+                                <a href='#Formation'
                                 className={`menu-items ${activeItem === 'A propos' ? 'active' : ''}`} 
-                                onClick={() => handleClick('A propos')}>A propos</a>
+                                onClick={() => handleClick('A propos')}>Formation</a>
                             </li>
                             <li>
-                                <a 
+                                <a href='#Contact'
                                 className={`menu-items ${activeItem === 'Contact' ? 'active' : ''}`} 
                                 onClick={() => handleClick('Contact')}>Contact</a>
                             </li>
                         </ul>
+                        
                     </nav>
                 </div>
             </div>

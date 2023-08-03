@@ -84,4 +84,33 @@
 .card-disappear {
     animation: cardDisappear 0.4s ease-in forwards;
   }
-  
+
+@media (max-width:767px) {
+    .site-cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .site-cards-container a {
+        width: 100%;
+    }
+    .portfolio-title {
+        font-size: 0;
+    }
+    .portfolio-title h2 {
+        font-size: 30px;  
+    }
+    .Portfolio-desc {
+        background: none;
+        opacity: 1;
+        color: white;
+    }
+    .site-card img {
+        filter: brightness(50%);
+    }
+    .Portfolio-desc h3 {
+        font-size: 22px;
+    }
+    .Portfolio-desc p {
+        font-size: 16px;
+    }
+}

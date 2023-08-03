@@ -1,0 +1,48 @@
+.bg-formation {
+    background: url(/public/formation-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.formation-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.formation-row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.formation {
+    margin-left: 50%;
+}
+.formation-title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.title-D {
+    font-weight: 300;
+    color: #eb5424;
+}
+@media (max-width:767px) {
+    .formation {
+        margin-left: 1%;
+    }
+    .formation-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .formation-title {
+        font-size: 0;
+    }
+    .formation-title h2 {
+        font-size: 30px;
+    }
+    .formation p {
+        font-weight: bold;
+    }
+
+}
