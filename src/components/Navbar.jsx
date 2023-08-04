@@ -34,7 +34,9 @@ function Navbar() {
     <div className={`navbar-default ${showNavbar ? 'show' : ''}`}>
         <div className='container'>
             <div className='row'>
-                <div>LOGO</div>
+                <div className='logo'>
+                    <img src='/public/logo-HA.jpg'></img>
+                </div>
                 <div>
                     <nav className='nav-flex'>
                         <div className="mobile-header">

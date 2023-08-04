@@ -20,10 +20,6 @@ function Profil() {
                         <span className='info-label'>Email</span>
                         ahammouche@hotmail.com
                     </p>
-                    <p>
-                        <span className='info-label'>Site web</span>
-                        <a target='_blank' rel='noopener noreferrer' href='#'>www.adam-hammouche.com</a>
-                    </p>
                     <div className='repo-github'>
                         <span className='info-label'>Repo github:</span>
                         <ul className='repo-list'>

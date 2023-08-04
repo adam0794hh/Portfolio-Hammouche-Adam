@@ -14,9 +14,13 @@ body {
     position: relative;
     z-index: 1;
 }
+.img-container {
+  width: 100%;
+  height: 100%;
+}
 .cover-img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
 }
 .intro {
@@ -40,8 +44,8 @@ body {
   margin-top: 20px;
 }
 .intro p {
-  font-size: 22px;
-  white-space: nowrap;
+  font-size: 18px;
+  margin: 0;
   color: #000;
 }
 .btn {
@@ -76,6 +80,9 @@ body {
       transform: scale(1);
     }
   }
+
+
+
   @media (max-width: 767px) {
     .Cover {
       width: 100%;
@@ -94,7 +101,7 @@ body {
     }
     .scale-animation {
       white-space: nowrap;
-      font-size: 30px;
+      font-size: 35px;
     }
     .intro h2 {
       font-size: 25px;

@@ -138,6 +138,24 @@
     color: #000;
 
 }
+@media (max-width:1200px) {
+    .mon-profil {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+@media (max-width:991px) {
+    .mon-profil {
+        margin-left: 0;
+        width: 100%;
+    }
+    .mon-profil h2 {
+        font-size: 40px;
+    }
+    .competences h2 {
+        font-size: 40px;
+    }
+}
 @media (max-width: 767px) {
     .mon-profil {
         margin-left: 0;

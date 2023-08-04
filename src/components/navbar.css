@@ -64,7 +64,7 @@
 }
 /* Styles for mobile */
 .mobile-header {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -79,12 +79,18 @@
     color: #eb5424;
 }
 
+
 /* Media query for mobile devices */
 @media (max-width: 767px) {
     .navbar-default {
         max-height: 51px;
     }
-
+    .mobile-header {
+        display: flex;
+    }
+    .logo {
+        margin-top: 4px;
+    }
     .nav-menu {
         display: none;
         flex-direction: column; 
