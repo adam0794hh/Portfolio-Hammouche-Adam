@@ -19,7 +19,7 @@ function SiteCard({ title, description, image }) {
   useEffect(() => {
     // Fonction de rappel qui sera exécutée lorsque la taille de l'écran change
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); 
+      setIsMobile(window.innerWidth <= 991); 
     };
 
     // Ajoute un écouteur d'événement pour les changements de taille de l'écran
