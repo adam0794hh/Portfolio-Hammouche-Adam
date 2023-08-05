@@ -12,8 +12,8 @@ function App() {
   return (
     <div>
       <Navbar/>
-      <Cover />
-      <Works />
+      <Cover/>
+      <Works/>
       <Portfolio/>
       <Profil/>
       <Formation/>

@@ -1,11 +1,11 @@
-import React, { forwardRef } from 'react'
+import React from 'react'
 import "../components/cover.css"
 
 function Cover () {
     return (
       <section id='Home' className='Cover'>
         <div className='img-container'>
-          <img className='cover-img' src='/public/bg1.png'></img>
+          <img className='cover-img' src='/public/bg1.png' alt='cover-image'></img>
         </div>
         <div className='intro'>
           <h1 className="scale-animation">Adam Hammouche</h1>
