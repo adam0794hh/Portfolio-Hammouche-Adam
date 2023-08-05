@@ -11,7 +11,7 @@ export default function Footer() {
             </div>
             <div className='contact-email'>
               <a href='mailto:ahammouche@hotmail.com'>
-                <img className='email-icon' src='/public/email.png'></img>
+                <img className='email-icon' src='/email.png'></img>
               </a>
             </div>
             <p>© 2023 Adam HAMMOUCHE, Tous droits réservés.</p>

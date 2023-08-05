@@ -52,7 +52,7 @@ function Navbar() {
         <div className='container'>
             <div className='row'>
                 <div className='logo'>
-                    <img src='/public/logo-HA.jpg'></img>
+                    <img src='/logo-HA.jpg'></img>
                 </div>
                 <div>
                     <nav className='nav-flex'>
