@@ -18,7 +18,7 @@ function Profil() {
                     </p>
                     <p>
                         <span className='info-label'>Email</span>
-                        ahammouche@hotmail.com
+                        Ha-Dev@hotmail.com
                     </p>
                     <div className='repo-github'>
                         <span className='info-label'>Repo github:</span>
