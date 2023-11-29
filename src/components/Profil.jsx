@@ -14,7 +14,7 @@ function Profil() {
                     </p>
                     <p>
                         <span className='info-label'>Téléphone</span>
-                        06 52 46 10 29
+                        06 58 46 15 20
                     </p>
                     <p>
                         <span className='info-label'>Email</span>
